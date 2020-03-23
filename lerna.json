@@ -1,0 +1,13 @@
+{
+  "packages": ["packages/*"],
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": ["*.md"],
+      "message": "chore(release): publish %s",
+      "registry": "http://nexus.tanzk.com:8081/repository/tzedu_npm_public/"
+    }
+  }
+}

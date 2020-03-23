@@ -1,2 +1,3 @@
 # lerna-ts-rollup
-Template of Lerna + TypeScript + Rollup. 
+
+Template of [Lerna](https://github.com/lerna/lerna) + TypeScript + Rollup.
