@@ -1,14 +1,19 @@
 {
   "compilerOptions": {
-    "module": "ES2015",
+    "module": "ESNEXT",
     "target": "ES5",
+    "noEmit": true,
     "sourceMap": true,
     "removeComments": true,
     "moduleResolution": "node",
-    "baseUrl": "./packages",
+    "esModuleInterop": true,
+    "rootDir": "./",
+    "baseUrl": "./",
     "paths": {
-      "@ltr/*": ["./*/lib"]
+      "@ltr/*": ["./packages/*/lib"],
+      "*": ["node_modules", "./packages"]
     }
   },
+  "include": ["./packages"],
   "exclude": ["node_modules", "dist"]
 }

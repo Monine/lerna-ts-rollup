@@ -1,26 +1,26 @@
-import { IFooOptions } from './types';
-import Bar, { IBarOptions, IBarDoSomeThingOptions } from '@ltr/bar';
+import { FooOptions } from './types';
+import Bar, { BarOptions, BarDoSomeThingOptions } from '@ltr/bar';
 
 export default class Foo {
-  public options: IFooOptions;
+  public options: FooOptions;
   private bar: Bar;
 
-  constructor(options: IFooOptions) {
+  constructor(options: FooOptions) {
     this.options = Object.assign(
       {
         arg1: 'a',
         arg2: 1,
         arg3: true,
-      } as IFooOptions,
+      } as FooOptions,
       options,
     );
 
-    const barOptions: IBarOptions = { arg5: 5, arg6: false };
+    const barOptions: BarOptions = { arg5: 5, arg6: false };
     this.bar = new Bar(barOptions);
 
     this.doSomeThing();
 
-    const barDoSomeThingOptions: IBarDoSomeThingOptions = {
+    const barDoSomeThingOptions: BarDoSomeThingOptions = {
       arg8: 8,
       arg9: true,
     };

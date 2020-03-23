@@ -26,7 +26,7 @@
     "url": "git+https://github.com/Monine/lerna-ts-rollup.git"
   },
   "scripts": {
-    "declaration": "rm -rf ./declaration && tsc -p tsconfig.declaration.json",
+    "declaration": "rm -rf ./declaration && tsc -p tsconfig.build.json",
     "build": "rm -rf ./dist && rollup -c && npm run declaration"
   },
   "bugs": {

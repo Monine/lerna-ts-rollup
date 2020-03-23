@@ -1,20 +1,20 @@
-import { IBarOptions, IBarDoSomeThingOptions } from './types';
+import { BarOptions, BarDoSomeThingOptions } from './types';
 
 export default class Bar {
-  public options: IBarOptions;
+  public options: BarOptions;
 
-  constructor(options: IBarOptions) {
+  constructor(options: BarOptions) {
     this.options = Object.assign(
       {
         arg4: 'a',
         arg5: 5,
         arg6: true,
-      } as IBarOptions,
+      } as BarOptions,
       options,
     );
   }
 
-  public doSomeThing(options: IBarDoSomeThingOptions) {
+  public doSomeThing(options: BarDoSomeThingOptions): void {
     console.log(options);
   }
 }

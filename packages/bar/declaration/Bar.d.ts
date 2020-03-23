@@ -1,6 +1,6 @@
-import { IBarOptions, IBarDoSomeThingOptions } from './types';
+import { BarOptions, BarDoSomeThingOptions } from './types';
 export default class Bar {
-    options: IBarOptions;
-    constructor(options: IBarOptions);
-    doSomeThing(options: IBarDoSomeThingOptions): void;
+    options: BarOptions;
+    constructor(options: BarOptions);
+    doSomeThing(options: BarDoSomeThingOptions): void;
 }
